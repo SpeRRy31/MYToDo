@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MYToDo</h1>
+        <div class="theme-toggle-section">
+            <button id="theme-toggle" class="theme-btn">
+                <img src="theme-btn.png" alt="theme">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="folder-side">
+            <section class="btn-section">
+                <button id="createFolderBtn">+ CREATE</button>
+            </section>
+            <section class="section-folder">
+                <div class="folder">
+                    <h3>Folder name</h3>
+                </div>
+                <div class="current-folder">
+                    <h3>Folder name</h3>
+                </div>
+                <div class="folder">
+                    <h3>Folder name</h3>
+                </div>
+                <div class="folder">
+                    <h3>Folder name</h3>
+                </div>
+            </section>
+        </section>
+        <section class="task-side">
+            <section class="btn-section">
+                <button id="createTaskBtn">+ CREATE</button>
+            </section>
+            <section class="section-task">
+                <div class="task">
+                    <h4>Task</h4>
+                    <p class="description-text">Description</p>
+                    <p class="status-text">Status</p>
+                    <form>
+                        <input type="checkbox" id="complete" name="complete">
+                    </form>
+                </div>
+                <div class="task-checked">
+                    <h4>Task</h4>
+                    <p class="description-text">Description</p>
+                    <p class="status-text">Status</p>
+                    <form>
+                        <input type="checkbox" id="complete" name="complete">
+                    </form>
+                </div>
+                <div class="task">
+                    <h4>Task</h4>
+                    <p class="description-text">Description</p>
+                    <p class="status-text">Status</p>
+                    <form>
+                        <input type="checkbox" id="complete" name="complete">
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 THSpeRRy - MYToDo. Limited version.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

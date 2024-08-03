@@ -1,0 +1,141 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+}
+
+
+body.dark-theme {
+    background-color: #201E43;
+    color: #EEEEEE;
+}
+
+body.light-theme {
+    background-color: #EEEEEE;
+    color: #201E43;
+}
+
+
+/* хедер */
+
+header{
+    box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.37);
+    font-size: 33px;
+    color: #508C9B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1{
+    text-align: center;
+    flex: 1;
+}
+
+
+img{
+    width: 45px;
+    height: 45px;
+}
+
+.theme-toggle-section{
+    position: absolute;
+    right: 10px;
+}
+
+*{
+    margin: 0;
+}
+
+/* головна сторінка */
+
+main{ 
+    min-height: calc(100vh - 140px);
+    display: flex;
+    margin: 20px 15px;
+    gap: 20px;
+}
+
+.folder-side, .task-side{
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* розділ з папками */
+
+.folder-side{
+    width: 200px;
+}
+
+button{
+    border: none;
+    background-color: #508c9b00;
+    color: #508C9B;
+    font-size: 16px;    
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(100, 100, 100);
+}
+
+.section-folder{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.folder, .current-folder{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.folder:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.current-folder{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #134B70;
+}
+
+/* розділ з тасками */
+
+.task-side{
+    flex: 1;
+}
+
+.section-task{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
+.task, .task-checked{
+    width: 100% - 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #508c9b15;
+}
+
+.task:hover{
+    background-color: #508c9b38;
+}
+
+.task-checked{
+    background-color: #508c9b59;
+}
+
+/* футер */
+
+footer{
+    font-weight: 800;
+    text-align: center;
+}
